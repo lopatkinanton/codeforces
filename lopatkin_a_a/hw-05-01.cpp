@@ -9,6 +9,7 @@ int main() {
     double e = 0.001;
     std::cout << std::setw(5) << "x" << std::setw(3) << "|" << std::setw(10) << "s(x)" << std::setw(3) << "|" << std::setw(10) << "f(x)\n";
     for (double x = a; x - b <= e; x += k) {
+        if (abs(x) < e) x = 0;
         double sum = 0;
         double s = e;
         int i = 0;
