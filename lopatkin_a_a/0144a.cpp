@@ -25,4 +25,5 @@ int main() {
     else {
         std::cout << x + n - y - 2;
     }
+    return 0;
 }
