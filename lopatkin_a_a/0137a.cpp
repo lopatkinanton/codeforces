@@ -33,4 +33,5 @@ int main() {
         k += 1;
     }
     std::cout << k;
+    return 0;
 }
