@@ -12,8 +12,9 @@ int main() {
         int cur = 1;
         std::string ans = "YES";
         for (int i = 0; i < len; i += 1) {
-            if (s[i] == s[i + 1])
+            if (s[i] == s[i + 1]) {
                 cur += 1;
+            }
             else {
                 if (cur == 1) {
                     ans = "NO";
