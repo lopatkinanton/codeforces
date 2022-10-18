@@ -8,8 +8,9 @@ int main() {
     for (int iTest = 0; iTest < t; iTest += 1) {
         int n = 8;
         std::vector<std::string> a(n);
-        for (int i = 0; i < n; i += 1)
+        for (int i = 0; i < n; i += 1) {
             std::cin >> a[i];
+        }
         int r = 0;
         int c = 0;
         for (int i = 1; i < n - 1; i += 1) {
