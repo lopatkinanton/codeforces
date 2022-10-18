@@ -15,7 +15,9 @@ int main() {
         int i = 0;
         int fact = 1;
         while (std::abs(s) >= e && s != 0) {
-            if (i > 1) fact *= i;
+            if (i > 1) {
+                fact *= i;
+            }
             s = (double) std::pow(2 * x, i) / fact;
             sum += s;
             i += 1;
