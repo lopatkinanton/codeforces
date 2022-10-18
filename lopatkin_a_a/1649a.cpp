@@ -8,8 +8,9 @@ int main() {
         int n = 0;
         std::cin >> n;
         std::vector <int> a(n);
-        for (int i = 0; i < n; i += 1)
+        for (int i = 0; i < n; i += 1) {
             std::cin >> a[i];
+        }
         int s = 0;
         for (int i = 0; i < n; i += 1) {
             if (a[i] == 0) {
