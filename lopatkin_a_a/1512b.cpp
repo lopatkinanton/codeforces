@@ -44,7 +44,8 @@ int main() {
             m[x[0]][y[1]] = '*';
             m[x[1]][y[0]] = '*';
         }
-        for (int i = 0; i < n; i += 1)
+        for (int i = 0; i < n; i += 1) {
             std::cout << m[i] << '\n';
+        }
     }
 }
