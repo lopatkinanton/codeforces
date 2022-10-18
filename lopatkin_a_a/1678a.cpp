@@ -12,8 +12,9 @@ int main() {
         int f = 0;
         for (int i = 0; i < n; i += 1) {
             std::cin >> a[i];
-            if (a[i] == 0)
+            if (a[i] == 0) {
                 k0 += 1;
+            }
             else if (!f) {
                 for (int j = 0; j < i; j += 1) {
                     if (a[j] == a[i]) {
@@ -24,12 +25,15 @@ int main() {
             }
         }
         int ans = 0;
-        if (k0 > 0)
+        if (k0 > 0) {
             ans = n - k0;
-        else if (f)
+        }
+        else if (f) {
             ans = n;
-        else
+        }
+        else {
             ans = n + 1;
+        }
         std::cout << ans << '\n';
     }
 }
