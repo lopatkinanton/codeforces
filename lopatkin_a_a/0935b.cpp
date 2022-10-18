@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 #include <string>
 
 int main() {
@@ -12,11 +11,13 @@ int main() {
     int k = -1;
     int m = -1;
     for (int i = 0; i < n; i += 1) {
-        if (s[i] == 'U')
+        if (s[i] == 'U') {
             y += 1;
-        if (s[i] == 'R')
+        }
+        if (s[i] == 'R') {
             x += 1;
-        if (y > x && k != 0){
+        }
+        if (y > x && k != 0) {
             m += 1;
             k = 0;
         }
