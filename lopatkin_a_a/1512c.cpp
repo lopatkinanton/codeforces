@@ -1,12 +1,12 @@
 #include <iostream>
 #include <string>
-#include <vector>
 
 int main() {
 	int t = 0;
 	std::cin >> t;
 	for (int iTest = 0; iTest < t; iTest += 1) {
-		int a = 0, b = 0;
+		int a = 0;
+		int b = 0;
 		std::cin >> a >> b;
 		int l = a + b;
 		std::string s;
@@ -37,8 +37,12 @@ int main() {
 			}
 		}
 		if (l % 2 == 1) {
-			if (s[l / 2] == '0') a -= 1;
-			if (s[l / 2] == '1') b -= 1;
+			if (s[l / 2] == '0') {
+				a -= 1;
+			}
+			if (s[l / 2] == '1') {
+				b -= 1;
+			}
 		}
 		for (int i = 0; i < l; i += 1) {
 			if (s[i] == '?' && s[l - i - 1] == '?') {
@@ -60,8 +64,12 @@ int main() {
 				break;
 			}
 		}
-		if (f && a == 0 && b == 0 ) std::cout << s << '\n';
-		else std::cout << -1 << '\n';
+		if (f && a == 0 && b == 0 ) {
+			std::cout << s << '\n';
+		}
+		else {
+			std::cout << -1 << '\n';
+		}
 	}
 	return 0;
 }
