@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 
 int main() {
     int t = 0;
@@ -10,11 +9,14 @@ int main() {
         int a10 = 0;
         int a11 = 0;
         std::cin >> a00 >> a01 >> a10 >> a11;
-        if (a00 == 0 && a01 == 0 && a10 == 0 && a11 == 0)
+        if (a00 == 0 && a01 == 0 && a10 == 0 && a11 == 0) {
             std::cout << "0\n";
-        else if (a00 == 1 && a01 == 1 && a10 == 1 && a11 == 1)
+        }
+        else if (a00 == 1 && a01 == 1 && a10 == 1 && a11 == 1) {
             std::cout << "2\n";
-        else
+        }
+        else {
             std::cout << "1\n";
+        }
     }
 }
