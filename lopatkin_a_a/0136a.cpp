@@ -10,6 +10,7 @@ int main() {
 		std::cin >> p;
 		v[p - 1] = i + 1;
 	}
-	for (int i = 0; i < n; i += 1)
+	for (int i = 0; i < n; i += 1) {
 		std::cout << v[i] << ' ';
+	}
 }
