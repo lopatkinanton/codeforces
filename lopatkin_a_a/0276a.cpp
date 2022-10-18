@@ -17,4 +17,5 @@ int main() {
         }
     }
     std::cout << m;
+    return 0;
 }
