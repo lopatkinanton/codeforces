@@ -40,4 +40,5 @@ int main() {
         b += (B[i] - '0') * std::pow(3, B.size() - i - 1);
     }
     std::cout << b;
+    return 0;
 }
